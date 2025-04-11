@@ -47,7 +47,8 @@ func main() {
 	port := ":8080"
 	fmt.Printf("Starting server on port %s...\n", port)
 
-	// This will block and run the server
+	log.SetFlags(0)
+
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
 		log.Fatalf("Server failed to start: %v", err)
