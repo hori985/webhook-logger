@@ -9,7 +9,7 @@ COPY . .
 RUN go mod tidy && \
     go mod verify   && \
     go mod download && \
-    go build -o ./bin/ ./cmd/...
+    go build -o ./bin/ ./...
 
 FROM alpine:3.21
 
