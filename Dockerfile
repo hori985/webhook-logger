@@ -21,5 +21,5 @@ COPY --from=builder --chown=webhook-logger:webhook-logger /home/webhook-logger/b
 WORKDIR /home/webhook-logger
 USER webhook-logger
 
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT [ "bin/webhook-logger" ]
