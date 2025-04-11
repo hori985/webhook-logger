@@ -44,7 +44,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("POST /", handler)
 
-	port := ":80"
+	port := ":8080"
 	fmt.Printf("Starting server on port %s...\n", port)
 
 	// This will block and run the server
